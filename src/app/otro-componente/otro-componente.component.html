@@ -1,0 +1,6 @@
+<p>otro-componente works!</p>
+<app-interno mensajeExterno ="este mensaje está definidio desde fuera del componente" ></app-interno>
+<app-interno [mensajeExterno]="mensajeParaInterno" ></app-interno>
+<app-show-number [numberToShow]="counter"></app-show-number>
+<button (click)="decreaseCounter()" >-</button>
+<button (click)="increaseCounter()">+</button>

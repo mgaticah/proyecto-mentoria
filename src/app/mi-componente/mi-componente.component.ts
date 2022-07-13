@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-mi-componente',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MiComponenteComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
+
 
   ngOnInit(): void {
   }
-
+  navegar(){
+   this.router.navigate(['/pagina2']);
+  }
 }
